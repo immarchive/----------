@@ -1,0 +1,306 @@
+@import './reset.css';
+@import './common.css';
+
+
+#wrap {
+    width: 1152px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* 헤더 GNB */
+.header .inner1{
+    display: flex;
+}
+.header .logo-area .logo{
+    display: inline-block;
+    width: 105px;
+    height: 27px;
+    background-position: -5px -165px;
+    margin-top: 8px;
+}
+.header .gnb{
+    display: flex;
+    width: 1051px;
+    height: 48px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .gnb .menu-area{
+    padding-left: 43px;
+}
+.header .gnb .menu-area .menu-list{
+    display: flex;
+}
+.header .gnb .menu-area .menu-list .menu-item{
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.header .gnb .service-area a{
+    padding: 0 8px;
+    font-weight: 700;
+}
+
+
+/* 슬로건 검색 날씨 */
+.header .inner2 .inner{
+    display: flex;
+    position: relative;
+    height: 119px;
+}
+
+/* 슬로건 */
+.header .slogan-area a{
+    display: block;
+    background: url(../img/slogan.png) no-repeat;
+    width: 133px;
+    height: 51px;
+    margin: 38px 0 30px;
+}
+
+/* 검색 */
+.header .search-area fieldset{
+    position: absolute;
+    display: flex;
+    width: 520px;
+    height: 42px;
+    margin-top: 0;
+    margin-left: -326px;
+    border: 3px solid #2292e9;
+    left: 50%;
+    top: 40px;
+}
+.header .search-area .input-text {
+    width: 458px;
+    height: 38px;
+    padding: 0 10px;
+    line-height: 38px;
+    color: #767676;
+    border: 0;
+}
+.header .search-area .btn-submit{
+    background-position: -32px -97px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+}
+
+/* 날씨 */
+.header .weather-area{
+    position: absolute;
+    right: 0;
+    display: flex;
+    width: 270px;
+    height: 85px;
+    margin-top: 34px;
+    text-align: right;
+}
+.header .weather-area .weather-inner{
+    max-width: 242px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 7px;
+}
+.header .weather-area .weather-inner a{
+    display: block;
+}
+.header .weather-area .link-icon{
+    display: inline-block;
+    margin-top: 4px;
+    margin-left: 3px;
+}
+.header .weather-area .weather-inner .link-info{
+    text-align: left;
+}
+.header .weather-area .weather-inner .link-info .title{
+    font-size: 25px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.header .weather-area .weather-inner .link-info .desc{
+    font-size: 16px;
+    letter-spacing: -0.1em;
+}
+.header .weather-area .weather-inner .link-desc{
+    margin-top: 7px;
+}
+.header .weather-area .weather-inner .link-desc .title,.desc{
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+.header .weather-area .weather-inner .link-desc .desc.good{
+    color: #009944;
+}
+.header .weather-area .weather-inner .link-desc .desc.bad{
+    color: #f10000;
+}
+
+/* 언어선택 */
+.header .lang-area{
+    display: flex;
+    width: 110px;
+    height: 21px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.header .lang-area .lang-select{
+    width: 80px;
+    height: 21px;
+    border: 1px solid #afcfea;
+    color: #1E6CB3;
+    font-size: 12px;
+    box-sizing: border-box;
+    line-height: 21px;
+}
+.header .lang-area select{
+    background: url(../img/bg_select_arrow_m.png) no-repeat no-repeat 96% center;
+    background-size: 8px auto;
+}
+.header .lang-area .btn-go{
+    width: 30px;
+    font-size: 11px;
+    color: #fff;
+    background-color: #1E6CB3;
+    border: 0;
+    height: 21px;
+    display: inline-block;
+    padding: 0;
+}
+
+
+
+
+
+/* 푸터 */
+.footer .group-link{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .group-link .nav-area{
+    padding: 15px 0;
+    display: flex;
+}
+.footer .group-link .nav-area .nav-list{
+    display: flex;
+}
+.footer .group-link .nav-area .nav-list .nav-item:first-child {
+    padding-left: 0;
+}
+.footer .group-link .nav-area .nav-list .nav-item{
+    position: relative;
+    padding: 0 10px;
+}
+.footer .group-link .nav-area .nav-list .nav-item+.nav-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 14px;
+    margin-top: -6px;
+    background: #dcdcdc;
+}
+.footer .group-link .nav-area .nav-list .nav-item a{
+    font-size: 12px;
+    color: #636363;
+}
+.footer .group-link .nav-area .nav-list .nav-item strong{
+    color: #000;
+    font-weight: 700;
+}
+.footer .group-link .sns-area{
+    margin-top: 10px;
+}
+.footer .group-link .sns-area a{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+.footer .group-link .sns-area a+a{
+    margin-left: 9px;
+}
+.footer .group-link .sns-area a{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+.footer .group-link .sns-area .link-sns.facebook{
+    content: '';
+    background-position: -25px 0;
+}
+.footer .group-link .sns-area .link-sns.twitter{
+    content: '';
+    background-position: -50px 0;
+}
+.footer .group-link .sns-area .link-sns.insta{
+    content: '';
+    background-position: -75px 0;
+}
+.footer .group-link .sns-area .link-sns.kakaostory{
+    content: '';
+    background-position: -100px 0;
+}
+.footer .group-link .sns-area .link-sns.youtube{
+    content: '';
+    background-position: -125px 0;
+}
+.footer .group-link .sns-area .link-sns.blog{
+    content: '';
+    background-position: -150px 0;
+}
+
+
+
+.footer .group-info{
+    position: relative;
+    display: flex;
+    padding: 22px 0;
+    border-top: 1px solid #ccc;
+}
+.footer .group-info .contact-area{
+    display: block;
+    width: 108px;
+    height: 45px;
+    margin-right: 40px;
+    background-position: -180px 0;
+    content: '';
+}
+.footer .group-info .addr-area{
+    display: inline-block;
+    font-weight: 500;
+    color: #636363;
+    padding-bottom: 2px;
+    font-size: 12px;
+}
+.footer .group-info .addr-area .copy{
+    font-size: 11px;
+}
+.footer .group-info .mark-area{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 0;
+}
+.fix-btn-top{
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    display: block;
+    width: 34px;
+    height: 34px;
+    margin-left: 600px;
+    opacity: 0;
+    transition: 1s;
+    z-index: 1000000;
+}
+.fix-btn-top.show{
+    opacity: 1;
+    bottom: 98px;
+}

@@ -1,0 +1,102 @@
+
+
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+
+.inner{
+    width: 1152px;
+    margin: 0 auto;
+}
+
+
+
+
+/* 이동 */
+.headtitle{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/* skip-nav */
+
+.skip-nav{
+    position: relative;
+    z-index: 3000
+}
+.skip-nav a {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    text-align: center
+}
+
+.skip-nav a:active,
+.skip-nav a:focus {
+    top: 0;
+    text-decoration: none;
+    z-index: 1000
+}
+
+
+
+/* 아이콘 세트 */
+.footer .group-info .contact-area,
+.sc-notice .control-area .btn.prev,
+.sc-notice .control-area .btn.autoplay,
+.sc-notice .control-area .btn.next,
+.sc-news .link-all .all::after,
+.sc-board .link-more,
+.sc-slidebanner .control-area .btn,
+.header .search-area .btn-submit,
+.header .logo-area .logo {
+    background-image: url(../img/icon-set.png);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+}
+
+/* 아이콘 세트2 */
+.sc-slidebanner .group-tab .tab.citizen .ic,
+.sc-slidebanner .group-tab .tab.news .ic{
+    background-image: url(../img/icon-set02.png);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+}
+/* 주요 서비스 */
+.sc-servicelist .service-list .service-item .ic{
+    background-image: url(../img/service-icon.png);
+    background-repeat: no-repeat;
+    background-size: 1200px 60px;
+}
+/* 스토리, 페스티벌 서울 */
+.sc-servicelist .festival:hover,
+.sc-servicelist .story:hover,
+.sc-servicelist .festival,
+.sc-servicelist .story{
+    background-image: url(../img/service-area.png);
+    background-repeat: no-repeat;
+    background-size: 160px 60px;
+}
+/* 오른쪽 아이콘 */
+.sc-boardseoul .group-sns .sns-area .title::after,
+.sc-boardseoul .group-sns .sns-list .ic{
+    background-image: url(../img/icon-set-sns01.png);
+    background-repeat: no-repeat;
+    background-size: 280px 40px;
+}
+/* 하단 아이콘 */
+.footer .group-link .sns-area .link-sns{
+    background-image: url(../img/icon-set-sns02.png);
+    background-repeat: no-repeat;
+    background-size: 175px 50px;
+}
